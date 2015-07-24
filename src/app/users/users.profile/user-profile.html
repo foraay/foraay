@@ -1,0 +1,19 @@
+<div layout="column" layout-margin layout-padding>
+  <md-content layout layout-padding>
+    <img ng-src="{{item.face}}?{{$index}}" class="md-avatar" alt="{{item.who}}" />
+    <md-icon md-svg-icon="assets/images/icons/ic_photo_48px.svg" ></md-icon>
+  </md-content>
+  <br/>
+  <md-content layout="column" layout-padding>
+    <md-input-container>
+      <label>fullname</label>
+      <input >
+    </md-input-container>
+    <md-input-container>
+      <label>email</label>
+      <input type="email">
+    </md-input-container>
+    <div align="right"><md-button class="md-raised md-accent">submit changes</md-button></div>
+  </md-content>
+</div>
+

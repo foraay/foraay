@@ -1,10 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700,700italic,400italic);
 
+*{
+  word-wrap: break-word;
+}
 html {
   font-family: 'Roboto Slab', serif;
 }
 body{
-  background: #fafaf2;
+  background: rgb(231, 235, 239);
 }
 
 [layout=row] {
@@ -27,7 +30,7 @@ body{
 }
 
 md-toolbar.md-default-theme {
-  background-color: #FFA000;
+  background-color: #0097A7
 }
 
 section.jumbotron {

@@ -5,7 +5,7 @@ angular.module('foraay')
     $stateProvider
       .state('home', {
         url: '/',
-        parent: 'index',
+        parent: 'sideNav',
         templateUrl: 'app/home/home.html',
         controller: 'HomeCtrl',
         controllerAs: 'homeCtrl'

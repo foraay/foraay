@@ -27,7 +27,25 @@ angular.module('foraay')
             templateUrl: 'app/components/footer/footer.html'
           }
         }
-      });
+      })
+      .state('middleLayout', {
+        parent: 'index',
+        abstract: true,
+        templateUrl: 'app/components/templates/middle.form.temp.html'
+      })
+      .state('sideNav', {
+          parent: 'index',
+          abstract: true,
+          templateUrl: 'app/components/templates/sideNav.temp.html',
+          controller: function ($scope, $timeout, $mdSidenav, $log) {
+            $scope.close = function () {
+              $mdSidenav('left').close()
+                .then(function () {
+                  $log.debug("close LEFT is done");
+                });
+            };
+          }
+        });
 
     $urlRouterProvider.otherwise('/');
   });

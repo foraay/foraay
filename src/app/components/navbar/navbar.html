@@ -2,23 +2,28 @@
   <div class="md-toolbar-tools">
     <md-button class="md-icon-button" aria-label="settings" ui-sref="home">
       <md-icon md-svg-icon="assets/images/ic_menu_24px.svg"></md-icon>
-       Foraay
     </md-button>
+     <h2>
+       <span>Maoni</span>
+     </h2>
     <span flex></span>
 
-      <md-menu ng-if="navbarCtrl.user">
-        <md-button aria-label="Open phone interactions menu" class="" ng-click="$mdOpenMenu()" ng-bind="navbarCtrl.user.fullname">
-        </md-button>
-        <md-menu-content width="4">
-          <md-menu-item>
-            <md-button ui-sref="logout">view and edit profile</md-button>
-          </md-menu-item>
-          <md-menu-item>
-            <md-button ui-sref="logout">logout</md-button>
-          </md-menu-item>
-          <!--<md-menu-divider></md-menu-divider>-->
+    <md-menu ng-if="navbarCtrl.user">
+      <md-button aria-label="Open phone interactions menu" class="md-fab" ng-click="$mdOpenMenu()" >
+        <md-icon md-svg-icon="assets/images/icons/ic_person_24px.svg"></md-icon>
+      </md-button>
+      <md-menu-content width="2">
+        <md-menu-item>
+          <md-button ui-sref="userprofile">
+            view/edit profile
+          </md-button>
+        </md-menu-item>
+        <md-menu-item>
+          <md-button ui-sref="logout">logout</md-button>
+        </md-menu-item>
+        <!--<md-menu-divider></md-menu-divider>-->
 
-        </md-menu-content>
-      </md-menu>
+      </md-menu-content>
+    </md-menu>
   </div>
 </md-toolbar>

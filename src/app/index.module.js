@@ -15,7 +15,7 @@ angular.module('foraay', [
 ])
   .run(function($rootScope, $state, log, AuthService) {
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
-      if (!AuthService.isLoggedIn){
+      /*if (!AuthService.isLoggedIn){
         AuthService.getCurrentSession()
           .then(AuthService.getUser)
           .then(function(response){
@@ -30,7 +30,7 @@ angular.module('foraay', [
               event.preventDefault();
             }
           })
-      }
+      }*/
     });
   });
 
